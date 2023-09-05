@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* quote-generator */
 .quote-generator {
     background-color: pink;
     height: 100vh;
@@ -43,4 +44,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* pass the message */
+.pass-message {
+    background: linear-gradient(lightblue, white);
+    overflow: hidden;
+}
+
+.msg{
+    width: fit-content;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: white;
+}
+
+.msg:hover {
+    background: rgba(100, 148, 237, 0.503)
+    ;
+    color: white;
+    border: white;
+}
+
+.container-message {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    border: 1px solid lightgray;
+    background: rgba( 74, 144, 226, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.235);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.message input {
+    width: 90%;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media (max-width: 480px){
+    .message input {
+        width: 82%;
+    }
 }

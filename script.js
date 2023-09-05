@@ -1,3 +1,5 @@
+// QUOTE GENERATOR
+
 function generate(){
     let quotes = {
         "-Jules Renard" : '"The truly free man is the one who can turn down an invitation to dinner without giving an excuse."',
@@ -14,4 +16,18 @@ function generate(){
 
     document.getElementById('quote').innerHTML = cite;
     document.getElementById('author').innerHTML = source;
+}
+
+// PASS THE MESSAGE
+
+const messageInput = document.getElementById('message-input');
+
+messageInput.addEventListener("keydown", function(event){
+    if(event.key == "Enter")
+    getMessage();
+})
+
+function getMessage(){
+    document.getElementById('message-output').innerHTML = messageInput.value;
+    messageInput.value = "";
 }
